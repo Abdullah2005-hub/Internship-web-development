@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+
+    <style>
+        /* ===== Reset Default Spacing ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* ===== Header Section ===== */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* ===== About Section ===== */
+        .about {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* ===== Skills Section using GRID ===== */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Skill Box (Box Model) ===== */
+        .skill-box {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border: 2px solid #2980b9;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* ===== Media Query for Mobile ===== */
+        @media (max-width: 768px) {
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Abdullah Farrukh</h1>
+        <p>Future Web Developer 🚀</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Abdullah. I am learning web development.
+            I enjoy coding and building websites. My goal is to become
+            a professional developer.I am currently studying in cui abbottabad.
+            i am doing internship in sync vortex company.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">C Language</div>
+            <div class="skill-box">Fast bowler</div>
+            <div class="skill-box">Ai learning</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Abdullah Farrukh</p>
+    </footer>
+
+</body>
+</html>
